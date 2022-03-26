@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contactStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="titleBlock">
+                <h1>Front-end Dev Nikita Litvinov</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Main</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <div class="submitionForm">
+                
+            <form action="/checkout" method="post" class="gridForm">
+                <div class="inputField">
+                    <label for="uFirstName"> First name:</label>
+                    <input type="text" required name="uFirstName" pattern="[a-zA-Z]+" placeholder="First Name" id="uFirstName" autofocus> 
+                </div>
+
+                <div class="inputField">
+                    <label for="uLastName"> Last name:</label>
+                    <input type="text" required name="uLastName" pattern="[a-zA-Z]+" placeholder="Last Name" id="uLastName"> 
+                </div>
+
+                <div class="inputField">
+                    <label for="uTel"> Phone number:</label>
+                    <input type="tel" name="uTel" required name="uTel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="437-123-4567">
+                </div>
+
+                <div class="inputField">
+                    <label for="uemail">E-mail: </label>
+                    <input type="email"  name="uemail"    id="uemail">
+                </div>
+
+                    
+                    
+                            
+                <!-- 3 Radio Buttons-->
+                <div class="inputField">
+                    <fieldset >
+                        <legend>Contact via: </legend>
+                        
+                        <input type="radio" name="wayOfContact" id="uemail">
+                        <label for="E-mail">Email</label>
+                            
+                             
+                        <input type="radio" name="wayOfContact" id="uTel">
+                        <label for="uTel">Telephone</label>
+                            
+                        <input type="radio" name="wayOfContact" id="uTel and email">
+                        <label for="uTel and email">Phone and Email</label>
+                    </fieldset>
+                        
+                    
+                </div>
+
+                        
+                        
+                    
+                    <!--Text area-->
+                <div class="inputField">
+                <label class="textArea" for="textArea">Please, describe the website</label>
+                <textarea name="umessage"></textarea>
+                </div>
+
+                    <!--Checkbox-->
+
+                <div class="checkboxField">
+                    <input type="checkbox" name="uterms" id="uterms">
+                    <label for="uterms">I agree with terms and conditions</label>
+                </div>
+
+                    <!--Button-->
+                <div class="submitButton">
+                    <input class="btn" type="submit" value="submit">
+                </div>
+            </form>
+                
+            
+         </div>
+        <footer>
+            <p>Nikita Litvinov &copy; All rights are reserved &nbsp; 2022</p>
+        </footer>
+    </div>
+</body>
+</html>
